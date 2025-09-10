@@ -303,28 +303,28 @@ ip route
 
 Parrot (attaquant)
 
-Stopper Bettercap / arpspoof / tcpdump / Wireshark
-pkill -9 bettercap arpspoof tcpdump wireshark 2>/dev/null
+- Stopper Bettercap / arpspoof / tcpdump / Wireshark
+- pkill -9 bettercap arpspoof tcpdump wireshark 2>/dev/null
 
-Désactiver le routage
-echo 0 > /proc/sys/net/ipv4/ip_forward
+- Désactiver le routage
+- echo 0 > /proc/sys/net/ipv4/ip_forward  
 
-Supprimer la règle NAT
-iptables -t nat -D POSTROUTING -o enp0s8 -j MASQUERADE
+- Supprimer la règle NAT
+- iptables -t nat -D POSTROUTING -o enp0s8 -j MASQUERADE  
 
-Purger ARP et cache des routes
-ip neigh flush all
-ip route flush cache
+- Purger ARP et cache des routes
+- ip neigh flush all
+- ip route flush cache  
 
-(Facultatif) Enlever l’IP labo si configurée manuellement
-ip addr del 192.168.100.20/24 dev enp0s3 2>/dev/null
+- (Facultatif) Enlever l’IP labo si configurée manuellement
+- ip addr del 192.168.100.20/24 dev enp0s3 2>/dev/null  
 
-Redémarrer proprement l’interface
-ip link set enp0s3 down && ip link set enp0s3 up
+- Redémarrer proprement l’interface  
+- ip link set enp0s3 down && ip link set enp0s3 up
 
-Vérifications
-ip -br a
-iptables -t nat -S | grep POSTROUTING || echo "NAT nettoyé ✅
+- Vérifications  
+- ip -br a
+- iptables -t nat -S | grep POSTROUTING || echo "NAT nettoyé ✅
 
 ![Nettoyage Parrot](senarionettoyageparrot.PNG)
 
