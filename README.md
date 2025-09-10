@@ -245,10 +245,10 @@ arpspoof -i enp0s3 -t 192.168.100.1 192.168.100.10
 
 ---
 
-#### ⚙️ Configuration Burp (attaquant — Parrot)
+#### ⚙️ Configuration Burp (attaquant - Parrot)
 - **Proxy > Proxy Listeners** : écouter sur `192.168.100.20:8080`
 
-#### ⚙️ Configuration Firefox (victime — Debian)
+#### ⚙️ Configuration Firefox (victime - Debian)
 - **Paramètres réseau** → Configuration manuelle du proxy
 - HTTP Proxy : `192.168.100.20`
 - Port : `8080`
@@ -258,7 +258,7 @@ Sinon, gardez-le uniquement pour les tests HTTP.
 #### 🔎 Test
 1. Dans Burp → `Proxy > Intercept` : **Intercept is on**
 2. Depuis Debian → ouvrez un site HTTP comme :
-👉 [http://example.com]
+👉 `http://example.com`
 3. Les requêtes doivent apparaître dans Burp.
 
 ➡️ Si rien n’apparaît :
