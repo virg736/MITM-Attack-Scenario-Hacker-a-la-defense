@@ -111,3 +111,21 @@ ip -br a
 Depuis Debian :  
 
 ping 192.168.100.20
+
+Depuis Parrot :  
+ping 192.168.100.10
+
+✔️ Réponses reçues = réseau interne OK  
+
+---
+
+## 🔎 Découverte réseau (Nmap)  
+
+Sur Parrot :  
+nmap -sn 192.168.100.0/24
+
+Résultat attendu :  
+- 192.168.100.10 (Debian)  
+- 192.168.100.20 (Parrot)  
+
+
