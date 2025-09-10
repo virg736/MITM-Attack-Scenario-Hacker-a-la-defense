@@ -2,6 +2,20 @@
 <img src="MITM%20attack.PNG" alt="MITM Attack" width="100%"/>
 </p>
 
+
+<div align="center">
+
+© 2025 Virginie Lechene - Tous droits réservés  
+Reproduction interdite sans autorisation préalable.  
+Usage pédagogique uniquement.  
+
+![License](https://licensebuttons.net/l/by-nd/4.0/88x31.png)
+
+*Image protégée – Propriété exclusive*
+
+</div>
+
+
 ---
 
 <div align="center">
