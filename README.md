@@ -117,6 +117,11 @@ ping 192.168.100.10
 
 ✔️ Réponses reçues = réseau interne OK  
 
+**Tests ping**
+<p align="center">
+<img src="./senarioping1.PNG" alt="Ping LAN OK" width="600">
+</p>
+
 ---
 
 ## 🔎 Découverte réseau (Nmap)  
