@@ -297,9 +297,11 @@ printf 'nameserver 1.1.1.1\n' > /etc/resolv.conf
 ip -br a
 ip route
 
+![Nettoyage Debian](senarionettoyagedebian.PNG)
+
 ---
 
-Parrot (attaquante)
+Parrot (attaquant)
 
 Stopper Bettercap / arpspoof / tcpdump / Wireshark
 pkill -9 bettercap arpspoof tcpdump wireshark 2>/dev/null
@@ -323,6 +325,8 @@ ip link set enp0s3 down && ip link set enp0s3 up
 Vérifications
 ip -br a
 iptables -t nat -S | grep POSTROUTING || echo "NAT nettoyé ✅
+
+![Nettoyage Parrot](senarionettoyageparrot.PNG)
 
 ---
 
