@@ -206,14 +206,6 @@ ip.addr == 192.168.100.10 → trafic de la victime
 
 💡 Vous pouvez aussi ouvrir le fichier /root/capture.pcap généré par Bettercap pour l’analyser directement.
 
-### 👀 Observation du trafic (tcpdump / Wireshark)
-
-<table>
-<tr>
-<td align="center"><b>tcpdump</b><br>
-<img src="senarioTCP.PNG" alt="tcpdump capture" width="420">
-</td>
-	
 
 ---
 
