@@ -208,16 +208,6 @@ ip.addr == 192.168.100.10 → trafic de la victime
 
 ### 👀 Observation du trafic (tcpdump / Wireshark)
 
-<table>
-<tr>
-  <td align="center"><b>tcpdump</b><br>
-    <img src="senarioTCP.PNG" alt="tcpdump capture" width="420">
-  </td>
-  <td align="center"><b>Wireshark</b><br>
-    <img src="senariowireshark3.PNG" alt="Wireshark capture" width="420">
-  </td>
-</tr>
-</table>
 
 ---
 
