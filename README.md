@@ -211,7 +211,7 @@ ip.addr == 192.168.100.10 → trafic de la victime
 
 ## 🕵️ Attaque MITM (Bettercap ou arpspoof)  
 
-### Option A — Bettercap *(recommandé)*  
+### Option A - Bettercap *(recommandé)*  
 
 Sur Parrot :  
 bettercap -iface enp0s3
@@ -330,7 +330,7 @@ Parrot (attaquant)
 - ☑️ **Utiliser un VPN** → chiffre tout le trafic même si le Wi-Fi est compromis.
 - ☑️ **Éviter les réseaux ouverts** (sans mot de passe WPA2/WPA3).
 - ☑️ **Désactiver la connexion automatique** aux anciens hotspots enregistrés.
-- ☑️ **Ne jamais installer de certificats inconnus** (ex. si une page vous demande d’accepter un certificat → FUITE !).
+- ☑️ **Ne jamais installer de certificats inconnus** (ex. si une page vous demande d’accepter un certificat → à fuir !).
 - ☑️ **Préférer 4G/5G** pour les opérations sensibles (banque, achats).
 - ☑️ **Vérifier les certificats dans le navigateur** (alerte = stop immédiat).
 - ☑️ **Désactiver le partage de fichiers** (Windows / macOS → couper “Partage réseau”).
@@ -347,7 +347,7 @@ Parrot (attaquant)
 
 ###  Résumé express
 - 🔗 VPN obligatoire
--  Éviter réseaux ouverts
+-  Éviter les réseaux ouverts
 - 🔐 WPA2/WPA3 + isolation clients
 -  Pas de certificats douteux
 -  Si doute → passer en 4G/5G
@@ -360,12 +360,12 @@ Le scénario présenté illustre une attaque **MITM en environnement de type Wi-
 
 Mais il existe **plusieurs variantes d’attaques MITM** :
 - **ARP spoofing / ARP poisoning** → redirection du trafic sur un réseau local (comme dans ce TP).
-- **DNS spoofing** → réponse DNS falsifiée pour rediriger la victime vers un faux site.
-- **HTTPS downgrade** → forcer la victime à utiliser HTTP non sécurisé.
+- **DNS spoofing** → réponse DNS falsifiée pour rediriger la victime vers un site frauduleux.
+- **HTTPS downgrade** → forcer la victime à utiliser un protocole HTTP non sécurisé.
 - **Evil Twin (faux Wi-Fi public)** → l’attaquant crée un hotspot Wi-Fi piégé pour capter le trafic des utilisateurs.
 - **Proxy transparent / interception SSL** → manipulation via un proxy ou un faux certificat.
 
-👉 Dans notre cas, le scénario est centré sur **l’usage d’un Wi-Fi public vulnérable**, un terrain très courant pour ce type d’attaque.
-
+👉 Dans notre cas, le scénario est centré sur **l’usage d’un Wi-Fi public vulnérable**, un cas d'usage très courant pour ce type d’attaque.
+ 
 ---
 
