@@ -12,8 +12,6 @@ Du scénario Hacker à la défense
 
 # 🚨 MITM Attack 
 
-![MITM Attack](MITM_attack.PNG)
-
 ##  Objectif
 Montrer, dans un environnement **100% local**, comment un attaquant placé dans un lieu public (gare, aéroport, café…) pourrait intercepter le trafic d’une victime via **ARP spoofing**.
 
