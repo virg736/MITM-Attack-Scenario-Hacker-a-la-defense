@@ -203,3 +203,9 @@ arpspoof -i enp0s3 -t 192.168.100.1 192.168.100.10
 
 ℹ️ Ici `192.168.100.1` représente la “passerelle” vue par la victime.  
 👉 Dans notre montage, où Parrot **est déjà la passerelle**, il est plus simple et plus sûr d’utiliser **Bettercap**.  
+
+📸 Exemple d’exécution :
+
+![Capture Bettercap](senariobettercap.PNG)
+	
+
