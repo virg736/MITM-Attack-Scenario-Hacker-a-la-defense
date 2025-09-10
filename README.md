@@ -1,13 +1,6 @@
 # MITM-Attack-Scenario-Hacker-a-la-defense
 
-<div align="center">
 
-# MITM-Attack-Scenario-Hacker-a-la-defense  
-
-![Bash CI](https://github.com/virg736/MITM-Attack-Scenario-Hacker-a-la-defense/actions/workflows/blash-ci.yml/badge.svg)
-![CodeQL](https://github.com/virg736/MITM-Attack-Scenario-Hacker-a-la-defense/actions/workflows/codeql.yml/badge.svg)
-
-</div>
 
 <p align="center">
 <img src="MITM%20attack.PNG" alt="MITM Attack" width="100%"/>
