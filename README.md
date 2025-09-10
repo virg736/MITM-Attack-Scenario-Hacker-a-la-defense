@@ -105,6 +105,19 @@ ip addr add 192.168.100.10/24 dev enp0s3
 ip link set enp0s3 up
 ip -br a
 
+## 🔢 Adressage & tests LAN
+
+<table>
+<tr>
+<td align="center"><b>Parrot (attaquant)</b><br>
+<img src="./senarioparrot1.PNG" alt="Parrot IP" width="420">
+</td>
+<td align="center"><b>Debian (victime)</b><br>
+<img src="./senariodebian1.PNG" alt="Debian IP" width="420">
+</td>
+</tr>
+</table>
+
 ---
 
 ### ✅ Tests LAN  
