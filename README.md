@@ -358,4 +358,20 @@ Parrot (attaquant)
 -  Pas de certificats douteux
 -  Si doute → passer en 4G/5G
 	
+---
+
+### 🔒 Conclusion — Attaques MITM et scénario Wi-Fi public
+
+Le scénario présenté illustre une attaque **MITM en environnement de type Wi-Fi public**, où l’attaquant peut se positionner entre la victime et la passerelle pour intercepter, modifier ou bloquer le trafic.
+
+Mais il existe **plusieurs variantes d’attaques MITM** :
+- **ARP spoofing / ARP poisoning** → redirection du trafic sur un réseau local (comme dans ce TP).
+- **DNS spoofing** → réponse DNS falsifiée pour rediriger la victime vers un faux site.
+- **HTTPS downgrade** → forcer la victime à utiliser HTTP non sécurisé.
+- **Evil Twin (faux Wi-Fi public)** → l’attaquant crée un hotspot Wi-Fi piégé pour capter le trafic des utilisateurs.
+- **Proxy transparent / interception SSL** → manipulation via un proxy ou un faux certificat.
+
+👉 Dans notre cas, le scénario est centré sur **l’usage d’un Wi-Fi public vulnérable**, un terrain très courant pour ce type d’attaque.
+
+---
 
