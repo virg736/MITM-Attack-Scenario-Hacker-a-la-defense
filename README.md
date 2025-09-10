@@ -276,25 +276,25 @@ Sinon, gardez-le uniquement pour les tests HTTP.
 
 ### 🧹 Nettoyage complet des machines
 
-#### 🖥️ Debian (victime)
+Debian (victime)
 
 bash
-# Supprimer la route par défaut (via Parrot)
+-  Supprimer la route par défaut (via Parrot)
 ip route del default
 
-# (Facultatif) Enlever l’IP labo si configurée manuellement
+- (Facultatif) Enlever l’IP labo si configurée manuellement
 ip addr del 192.168.100.10/24 dev enp0s3
 
-# Purger le cache ARP
+- Purger le cache ARP
 ip neigh flush all
 
-# Redémarrer proprement l’interface
+-  Redémarrer proprement l’interface
 ip link set enp0s3 down && ip link set enp0s3 up
 
-# (Option) Rétablir /etc/resolv.conf
+- (Option) Rétablir /etc/resolv.conf
 printf 'nameserver 1.1.1.1\n' > /etc/resolv.conf
 
-# Vérifications
+- Vérifications
 ip -br a
 ip route
 	
