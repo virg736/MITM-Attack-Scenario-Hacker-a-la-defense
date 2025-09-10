@@ -126,7 +126,13 @@ nmap -sn 192.168.100.0/24
 
 Résultat attendu :  
 - 192.168.100.10 (Debian)  
-- 192.168.100.20 (Parrot)  
+- 192.168.100.20 (Parrot)
+
+## 🔎 Découverte réseau (Nmap)
+<p align="center">
+<img src="./senarionmap.PNG" alt="Nmap scan 192.168.100.0/24" width="720">
+</p>
+
 
 ## 🔁 Transformer Parrot en routeur NAT  
 
