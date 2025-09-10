@@ -1,18 +1,5 @@
 # MITM-Attack-Scenario-Hacker-a-la-defense
 
-# MITM-Attack-Scenario-Hacker-a-la-defense
-
-<p align="center">
-
-<!-- Badge CI -->
-<a href="https://github.com/virg736/MITM-Attack-Scenario-Hacker-a-la-defense/actions/workflows/blash-ci.yml">
-  <img src="https://github.com/virg736/MITM-Attack-Scenario-Hacker-a-la-defense/actions/workflows/blash-ci.yml/badge.svg" alt="CI Status">
-</a>
-
-<!-- Badge CodeQL -->
-<a href="https://github.com/virg736/MITM-Attack-Scenario-Hacker-a-la-defense/actions/workflows/codeql.yml">
-  <img src="https://github.com/virg736/MITM-Attack-Scenario-Hacker-a-la-defense/actions/workflows/codeql.yml/badge.svg" alt="CodeQL">
-</a>
 
 <!-- Badge Release -->
 <a href="https://github.com/virg736/MITM-Attack-Scenario-Hacker-a-la-defense/releases">
