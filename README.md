@@ -210,13 +210,6 @@ ip.addr == 192.168.100.10 → trafic de la victime
 ![tcpdump](./senarioTCP.PNG)  
 [Voir en grand](./senarioTCP.PNG)
 
-### 🧪 Capture Wireshark
-
-<p align="center">
-<img src="senariowireshark3.PNG" alt="Wireshark capture" width="600">
-</p>
-
-
 
 ---
 
