@@ -323,5 +323,35 @@ ip link set enp0s3 down && ip link set enp0s3 up
 Vérifications
 ip -br a
 iptables -t nat -S | grep POSTROUTING || echo "NAT nettoyé ✅
+
+---
+
+## Se protéger sur un Wi-Fi public
+
+### 🔒 Bonnes pratiques utilisateur
+- ☑️ **Utiliser un VPN** → chiffre tout le trafic même si le Wi-Fi est compromis.
+- ☑️ **Éviter les réseaux ouverts** (sans mot de passe WPA2/WPA3).
+- ☑️ **Désactiver la connexion automatique** aux anciens hotspots enregistrés.
+- ☑️ **Ne jamais installer de certificats inconnus** (ex. si une page vous demande d’accepter un certificat → FUITE !).
+- ☑️ **Préférer 4G/5G** pour les opérations sensibles (banque, achats).
+- ☑️ **Vérifier les certificats dans le navigateur** (alerte = stop immédiat).
+- ☑️ **Désactiver le partage de fichiers** (Windows / macOS → couper “Partage réseau”).
+
+---
+
+###  Côté administrateur (Wi-Fi public)
+- Configurer le Wi-Fi avec **WPA2-Enterprise / WPA3** (éviter l’ouvert sans mot de passe).
+- Mettre en place une **segmentation VLAN** (isolation client-à-client).
+- Activer **Dynamic ARP Inspection (DAI)** et **Port Security** sur l’infra réseau.
+- Surveiller le réseau avec un **IDS/IPS** (détection ARP spoof, DNS falsifiés).
+
+---
+
+###  Résumé express
+- 🔗 VPN obligatoire
+-  Éviter réseaux ouverts
+- 🔐 WPA2/WPA3 + isolation clients
+-  Pas de certificats douteux
+-  Si doute → passer en 4G/5G
 	
 
