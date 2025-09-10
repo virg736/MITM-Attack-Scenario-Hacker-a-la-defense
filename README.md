@@ -49,3 +49,50 @@ Dans un **aéroport** ou un **café**, un attaquant peut se placer entre les cli
 
 👉 Dans ce projet, nous reproduisons ces techniques **en labo local** pour apprendre à les comprendre et s’en défendre.
 
+---
+
+## 🧱 Architecture du labo & prérequis  
+
+### VMs  
+
+**Parrot OS (attaquant)**  
+- NIC1 : NAT (sortie Internet de la VM) → enp0s8 (ex. 10.0.3.15/24)  
+- NIC2 : Internal Network nommé LAB → enp0s3  
+
+**Debian (victime)**  
+- NIC1 : Internal Network LAB → enp0s3  
+
+---
+
+### 🗺️ Plan d’adressage (réseau interne LAB)  
+- Parrot (enp0s3) : 192.168.100.20/24  
+- Debian (enp0s3) : 192.168.100.10/24  
+- Passerelle “vue par Debian” : 192.168.100.20 (Parrot)  
+
+---
+
+### 🛠️ Logiciels utiles (côté Parrot)  
+- nmap  
+- bettercap (ou dsniff/arpspoof)  
+- tcpdump  
+- wireshark  
+- iptables  
+
+---
+
+## ⚙️ Paramétrage VirtualBox  
+
+**Parrot → Paramètres > Réseau**  
+- Carte 1 : NAT  
+- Carte 2 : Réseau interne → Nom : LAB  
+
+**Debian → Paramètres > Réseau**  
+- Carte 1 : Réseau interne → Nom : LAB  
+
+➡️ Démarrez les deux VMs.  
+
+---
+
+## 🔢 Adressage & tests LAN  
+
+### Parrot (root)  
