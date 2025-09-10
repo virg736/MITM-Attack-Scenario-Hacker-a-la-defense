@@ -162,7 +162,10 @@ echo 1 > /proc/sys/net/ipv4/ip_forward
 
 iptables -t nat -A POSTROUTING -o enp0s8 -j MASQUERADE
 
+
+![Forwarding sur Parrot](senarioforwarding.PNG)
 ---
+
 
 ## 🌐 Configurer la victime pour sortir sur Internet via Parrot  
 
