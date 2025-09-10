@@ -10,7 +10,7 @@ Du scénario Hacker à la défense
 
 ---
 
-# 🚨 MITM Attack — Scénario pédagogique en labo local
+# 🚨 MITM Attack 
 
 ![MITM Attack](MITM_attack.PNG)
 
