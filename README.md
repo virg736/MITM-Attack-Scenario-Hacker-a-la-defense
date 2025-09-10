@@ -54,7 +54,6 @@ Dans un **aéroport** ou un **café**, un attaquant peut se placer entre les cli
 **Debian (victime)**  
 - NIC1 : Réseau interne (LAB) → enp0s3  
 
-
 ---
 
 ### 🗺️ Plan d’adressage (réseau interne LAB)  
@@ -82,7 +81,7 @@ Dans un **aéroport** ou un **café**, un attaquant peut se placer entre les cli
 **Debian → Paramètres > Réseau**  
 - Carte 1 : Réseau interne → Nom : LAB  
 
-➡️ Démarrez les deux VMs.  
+➡️ Lancez les deux VMs.  
 
 ---
 
