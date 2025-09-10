@@ -181,13 +181,12 @@ ping -c 3 google.com   # doit répondre si DNS OK
 
 ---
 
-## 👀 Observation du trafic (tcpdump / Wireshark)
+## Observation du trafic (tcpdump / Wireshark)
 
-### tcpdump (rapide)
+ tcpdump (rapide)
 
 bash
-tcpdump -i enp0s3
-# ou pour DNS uniquement
+tcpdump -i enp0s3 ou pour DNS uniquement
 tcpdump -i enp0s3 port 53
 
 ### Wireshark (confort)
