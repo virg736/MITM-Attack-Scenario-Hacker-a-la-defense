@@ -1,4 +1,10 @@
 <p align="center">
+<img src="MITM%20attack.PNG" alt="MITM Attack" width="100%"/>
+</p>
+
+
+
+<p align="center">
 <img src="MITM%20attack.PNG" alt="MITM Attack" width="500"/>
 </p>
 
