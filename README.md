@@ -96,13 +96,13 @@ Dans un **aéroport** ou un **café**, un attaquant peut se placer entre les cli
 ## 🔢 Adressage & tests LAN  
 
 ### Parrot (root)  
-ip addr add 192.168.100.20/24 dev enp0s3, 
-ip link set enp0s3 up, 
+ip addr add 192.168.100.20/24 dev enp0s3,  
+ip link set enp0s3 up,  
 ip -br a
 
 ### Debian (root)  
-ip addr add 192.168.100.10/24 dev enp0s3
-ip link set enp0s3 up
+ip addr add 192.168.100.10/24 dev enp0s3, 
+ip link set enp0s3 up, 
 ip -br a
 
 ## 🔢 Adressage & tests LAN
