@@ -241,5 +241,61 @@ arpspoof -i enp0s3 -t 192.168.100.1 192.168.100.10
 📸 Exemple d’exécution :
 
 ![Capture Bettercap](senariobettercap.PNG)
+
+---
+
+### 🧪 Option : Proxy/Burp (HTTP)
+
+> **Note :** Intercepter du trafic HTTPS exige la gestion de certificats (CA Burp).
+> Pour ce TP, on garde simple → uniquement HTTP.
+
+---
+
+#### ⚙️ Configuration Burp (attaquant — Parrot)
+- **Proxy > Proxy Listeners** : écouter sur `192.168.100.20:8080`
+
+#### ⚙️ Configuration Firefox (victime — Debian)
+- **Paramètres réseau** → Configuration manuelle du proxy
+- HTTP Proxy : `192.168.100.20`
+- Port : `8080`
+- (Option) Cochez *Utiliser également ce proxy pour HTTPS* seulement si vous avez installé la CA.
+Sinon, gardez-le uniquement pour les tests HTTP.
+
+#### 🔎 Test
+1. Dans Burp → `Proxy > Intercept` : **Intercept is on**
+2. Depuis Debian → ouvrez un site HTTP comme :
+👉 [http://neverssl.com](http://neverssl.com)
+3. Les requêtes doivent apparaître dans Burp.
+
+➡️ Si rien n’apparaît :
+- Vérifiez IP et port.
+- Assurez-vous que l’écouteur Burp est actif.
+- Confirmez que Firefox n’est pas réglé sur "Pas de proxy".
+
+---
+
+### 🧹 Nettoyage complet des machines
+
+#### 🖥️ Debian (victime)
+
+bash
+# Supprimer la route par défaut (via Parrot)
+ip route del default
+
+# (Facultatif) Enlever l’IP labo si configurée manuellement
+ip addr del 192.168.100.10/24 dev enp0s3
+
+# Purger le cache ARP
+ip neigh flush all
+
+# Redémarrer proprement l’interface
+ip link set enp0s3 down && ip link set enp0s3 up
+
+# (Option) Rétablir /etc/resolv.conf
+printf 'nameserver 1.1.1.1\n' > /etc/resolv.conf
+
+# Vérifications
+ip -br a
+ip route
 	
 
