@@ -1,10 +1,6 @@
 # MITM-Attack-Scenario-Hacker-a-la-defense
 
 
-<!-- Badge Release -->
-<a href="https://github.com/virg736/MITM-Attack-Scenario-Hacker-a-la-defense/releases">
-  <img src="https://img.shields.io/github/v/release/virg736/MITM-Attack-Scenario-Hacker-a-la-defense?sort=semver
-
 <p align="center">
 <img src="MITM%20attack.PNG" alt="MITM Attack" width="100%"/>
 </p>
