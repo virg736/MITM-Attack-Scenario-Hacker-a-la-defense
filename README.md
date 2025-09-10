@@ -181,7 +181,7 @@ bash
 tcpdump -i enp0s3 ou pour DNS uniquement
 tcpdump -i enp0s3 port 53
 
-### Wireshark (confort)
+### Wireshark 
 
 Lancer Wireshark sur Parrot → interface enp0s3 (réseau LAB).
 
@@ -258,7 +258,7 @@ Sinon, gardez-le uniquement pour les tests HTTP.
 #### 🔎 Test
 1. Dans Burp → `Proxy > Intercept` : **Intercept is on**
 2. Depuis Debian → ouvrez un site HTTP comme :
-👉 [http://neverssl.com](http://neverssl.com)
+👉 [http://example.com]
 3. Les requêtes doivent apparaître dans Burp.
 
 ➡️ Si rien n’apparaît :
