@@ -181,6 +181,34 @@ ping -c 3 google.com   # doit répondre si DNS OK
 
 ---
 
+## 👀 Observation du trafic (tcpdump / Wireshark)
+
+### tcpdump (rapide)
+
+bash
+tcpdump -i enp0s3
+# ou pour DNS uniquement
+tcpdump -i enp0s3 port 53
+
+### Wireshark (confort)
+
+Lancer Wireshark sur Parrot → interface enp0s3 (réseau LAB).
+
+Filtres utiles (dans la barre de filtre d’affichage) :
+
+dns → requêtes DNS
+
+icmp → pings
+
+ http → HTTP en clair
+
+ip.addr == 192.168.100.10 → trafic de la victime
+
+
+💡 Vous pouvez aussi ouvrir le fichier /root/capture.pcap généré par Bettercap pour l’analyser directement.
+
+---
+
 ## 🕵️ Attaque MITM (Bettercap ou arpspoof)  
 
 ### Option A — Bettercap *(recommandé)*  
