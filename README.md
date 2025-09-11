@@ -1,7 +1,5 @@
 # MITM-Attack-Scenario-Hacker-a-la-defense
 
-![Bash CI](https://github.com/virg736/MITM-Attack-Scenario-Hacker-a-la-defense/actions/workflows/blash-ci.yml/badge.svg)
-![CodeQL](https://github.com/virg736/MITM-Attack-Scenario-Hacker-a-la-defense/actions/workflows/codeql.yml/badge.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
 <p align="center">
