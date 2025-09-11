@@ -55,23 +55,6 @@ Ce guide est destiné à l’**apprentissage/défense** et au **pentest autoris�
 12. [Bonnes pratiques Wi-Fi public](#se-protéger-sur-un-wi-fi-public)
 13. [Résumé & Conclusion](#résumé-express)
 	
-
-
-##  Sommaire
-
-1. Contexte “hacker en lieu public
-2. Architecture du labo & prérequis
-3. Paramétrage de VirtualBox
-4. Adressage & tests LAN
-5. Découverte du réseau (Nmap)
-6. Transformer Parrot en routeur NAT
-7. Configurer la victime pour accéder à Internet via Parrot
-8. Attaque MITM (Bettercap ou Arpspoof)
-9. Observation du trafic (tcpdump / Wireshark)
-10. Option : Proxy/ Burp (HTTP)
-11. Nettoyage complet des machines
-12. Dépannage rapide
-
 ---
 
 ##  Contexte : "hacker en lieu public"
