@@ -1,4 +1,4 @@
-# MITM Attack Scenario, du Hacking à la défense
+# MITM Attack Scénario, du Hacking à la défense
 
 [![Bash CI](https://github.com/virg736/MITM-Attack-Scenario-Hacker-a-la-defense/actions/workflows/blash-ci.yml/badge.svg)](https://github.com/virg736/MITM-Attack-Scenario-Hacker-a-la-defense/actions/workflows/blash-ci.yml)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
