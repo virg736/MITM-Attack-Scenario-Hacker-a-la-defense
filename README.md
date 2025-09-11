@@ -79,7 +79,16 @@ Dans un **aéroport** ou un **café**, un attaquant peut se placer entre les cli
 
 ---
 
-## 🧱 Architecture du labo & prérequis  
+##  Guide rapide
+
+1. Importer les 2 VM (Parrot & Debian) dans VirtualBox.  
+2. Configurer les interfaces réseau (Parrot NAT + LAB, Debian LAB).  
+3. Lancer les VMs.  
+4. Suivre le scénario pas à pas → depuis la section [Configuration IP & tests LAN](#configuration-ip--tests-lan).  
+
+---
+
+##  Architecture du labo & prérequis  
 
 ### VMs  
 
@@ -92,7 +101,7 @@ Dans un **aéroport** ou un **café**, un attaquant peut se placer entre les cli
 
 ---
 
-### 🗺️ Plan d’adressage (réseau interne LAB)  
+###  Plan d’adressage (réseau interne LAB)  
 - Parrot (enp0s3) : 192.168.100.20/24  
 - Debian (enp0s3) : 192.168.100.10/24  
 - Passerelle "vue par Debian" : 192.168.100.20 (Parrot)  
