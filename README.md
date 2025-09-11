@@ -133,6 +133,13 @@ Il ne s’agit pas d’un accès direct au vrai Internet, tout reste confiné da
 - wireshark  
 - iptables  
 
+- **nmap** : outil de scan réseau permettant de découvrir les machines et services actifs.  
+- **bettercap** (ou **dsniff / arpspoof**) : framework d’attaque réseau, utilisé ici pour réaliser un MITM via ARP spoofing.  
+- **tcpdump** : analyseur de paquets en ligne de commande, pratique pour observer rapidement le trafic.  
+- **wireshark** : analyseur de paquets graphique, permettant d’inspecter en détail les flux réseau.  
+- **iptables** : outil de configuration du pare-feu Linux, utilisé pour filtrer et sécuriser le trafic.  
+
+
 ---
 
 ##  Paramétrage VirtualBox  
