@@ -108,7 +108,7 @@ Dans un **aéroport** ou un **café**, un attaquant peut se placer entre les cli
 
 ---
 
-### 🛠️ Logiciels utiles (côté Parrot)  
+### Logiciels utiles (côté Parrot)  
 - nmap  
 - bettercap (ou dsniff/arpspoof)  
 - tcpdump  
@@ -117,7 +117,7 @@ Dans un **aéroport** ou un **café**, un attaquant peut se placer entre les cli
 
 ---
 
-## ⚙️ Paramétrage VirtualBox  
+##  Paramétrage VirtualBox  
 
 **Parrot → Paramètres > Réseau**  
 - Carte 1 : NAT  
