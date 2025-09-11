@@ -85,7 +85,19 @@ Dans un **aéroport** ou un **café**, un attaquant peut se placer entre les cli
 3. Lancer les VMs.  
 4. Suivre le scénario pas à pas → depuis la section [Configuration IP & tests LAN](#configuration-ip--tests-lan).  
 
+
+          🌍 Internet
+              │
+          (NAT)
+              │
+        🦜 Parrot OS (Attaquant)
+              │
+        🔗 Réseau LAB
+              │
+       🖥️ Debian (Victime)
+
 ---
+
 
 ##  Architecture du labo & prérequis  
 
