@@ -106,7 +106,7 @@ Dans un **aéroport** ou un **café**, un attaquant peut se placer entre les cli
 **Debian → Paramètres > Réseau**  
 - Carte 1 : Réseau interne → Nom : LAB  
 
-➡️ Lancez les deux VMs.  
+➡️ Lancez ensuite les deux VMs.  
 
 ---
 
@@ -297,22 +297,22 @@ Sinon, gardez-le uniquement pour les tests HTTP.
 
 Debian (victime)
 
--  Supprimer la route par défaut (via Parrot)
+-  Supprimer la route par défaut (via Parrot) :
 ip route del default  
 
-- (Facultatif) Enlever l’IP labo si configurée manuellement
+- (Facultatif) Enlever l’IP labo si configurée manuellement :
 ip addr del 192.168.100.10/24 dev enp0s3  
 
-- Purger le cache ARP
+- Purger le cache ARP :
 ip neigh flush all  
 
--  Redémarrer proprement l’interface
+-  Redémarrer proprement l’interface :
 ip link set enp0s3 down && ip link set enp0s3 up  
 
-- (Option) Rétablir /etc/resolv.conf
+- (Option) Rétablir /etc/resolv.conf :
 printf 'nameserver 1.1.1.1\n' > /etc/resolv.conf  
 
-- Vérifications
+- Vérifications :
 ip -br a
 ip route
 
@@ -322,26 +322,26 @@ ip route
 
 Parrot (attaquant)
 
-- Stopper Bettercap / arpspoof / tcpdump / Wireshark
+- Stopper Bettercap / arpspoof / tcpdump / Wireshark :
 - pkill -9 bettercap arpspoof tcpdump wireshark 2>/dev/null
 
-- Désactiver le routage
+- Désactiver le routage :
 - echo 0 > /proc/sys/net/ipv4/ip_forward  
 
-- Supprimer la règle NAT
+- Supprimer la règle NAT :
 - iptables -t nat -D POSTROUTING -o enp0s8 -j MASQUERADE  
 
-- Purger ARP et cache des routes
+- Purger ARP et cache des routes :
 - ip neigh flush all
 - ip route flush cache  
 
-- (Facultatif) Enlever l’IP labo si configurée manuellement
+- (Facultatif) Enlever l’IP labo si configurée manuellement :
 - ip addr del 192.168.100.20/24 dev enp0s3 2>/dev/null  
 
-- Redémarrer proprement l’interface  
+- Redémarrer proprement l’interface :  
 - ip link set enp0s3 down && ip link set enp0s3 up
 
-- Vérifications  
+- Vérifications :  
 - ip -br a
 - iptables -t nat -S | grep POSTROUTING || echo "NAT nettoyé ✅
 
@@ -356,7 +356,7 @@ Parrot (attaquant)
 - ☑️ **Éviter les réseaux ouverts** (sans mot de passe WPA2/WPA3).
 - ☑️ **Désactiver la connexion automatique** aux anciens hotspots enregistrés.
 - ☑️ **Ne jamais installer de certificats inconnus** (ex. si une page vous demande d’accepter un certificat → à fuir !).
-- ☑️ **Préférer 4G/5G** pour les opérations sensibles (banque, achats).
+- ☑️ **Privilégier 4G/5G** pour les opérations sensibles (banque, achats).
 - ☑️ **Vérifier les certificats dans le navigateur** (alerte = stop immédiat).
 - ☑️ **Désactiver le partage de fichiers** (Windows / macOS → couper “Partage réseau”).
 
@@ -379,7 +379,7 @@ Parrot (attaquant)
 	
 ---
 
-### 🔒 Conclusion — Attaques MITM et scénario Wi-Fi public
+### 🔒 Conclusion - Attaques MITM et scénario Wi-Fi public
 
 Le scénario présenté illustre une attaque **MITM en environnement de type Wi-Fi public**, où l’attaquant peut se positionner entre la victime et la passerelle pour intercepter, modifier ou bloquer le trafic.
 
