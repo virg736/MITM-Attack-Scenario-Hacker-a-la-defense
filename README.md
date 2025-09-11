@@ -349,7 +349,7 @@ En plus de la démonstration des attaques **MITM (Man-in-the-Middle)**, ce proje
 - Évite les détournements de résolution DNS.  
 - Compatible **Debian / Ubuntu / Parrot**.  
 
-### 🚀 Utilisation
+### Utilisation
 
 chmod +x protect_mitm.sh
 sudo ./protect_mitm.sh
