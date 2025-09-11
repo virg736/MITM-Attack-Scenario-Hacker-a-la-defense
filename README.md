@@ -34,7 +34,7 @@ Usage pédagogique uniquement.
 ##  Objectif
 Montrer, dans un environnement **100% local**, comment un attaquant placé dans un lieu public (gare, aéroport, café…) pourrait intercepter le trafic d’une victime via **ARP spoofing**.
 
-⚠️ **Légal / éthique** : ne jamais appliquer hors d’un labo dont vous contrôle l'environnement.
+⚠️ **Légal / éthique** : ne jamais appliquer hors d’un labo dont vous contrôlez l'environnement.
 Ce guide est destiné à l’**apprentissage/défense** et au **pentest autorisé uniquement**.
 
 ---
