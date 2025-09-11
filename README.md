@@ -56,7 +56,7 @@ Ce guide est destiné à l’**apprentissage/défense** et au **pentest autoris�
 
 ---
 
-##  Contexte "hacker en lieu public"
+##  Contexte : "hacker en lieu public"
 
 Dans un **aéroport** ou un **café**, un attaquant peut se placer entre les clients et Internet :
 
@@ -64,7 +64,7 @@ Dans un **aéroport** ou un **café**, un attaquant peut se placer entre les cli
 - empoisonner la table ARP (MITM) pour que la victime envoie son trafic à l’attaquant,
 - observer ou modifier le trafic non chiffré (HTTP, DNS, etc.).
 
-👉 Dans ce projet, nous reproduisons ces techniques **dans un labo local** pour apprendre à les comprendre et s’en proteger.
+👉 Dans ce projet, nous reproduisons ces techniques **dans un labo local** afin d'apprendre à les comprendre et à s’en proteger.
 
 ---
 
