@@ -99,7 +99,7 @@ Dans un **aéroport** ou un **café**, un attaquant peut se placer entre les cli
 
 📌 Légende :
 
-Dans ce TP, “Internet” correspond uniquement à la sortie NAT de VirtualBox.
+Dans ce TP, "Internet" correspond uniquement à la sortie NAT de VirtualBox.
 Il ne s’agit pas d’un accès direct au vrai Internet, tout reste confiné dans un labo local et sécurisé.
 
 
