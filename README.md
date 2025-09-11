@@ -331,6 +331,31 @@ Sinon, gardez-le uniquement pour les tests HTTP.
 
 ---
 
+## 🛡️ Script de protection : `protect_mitm.sh`
+
+En plus de la démonstration des attaques **MITM (Man-in-the-Middle)**, ce projet inclut un script de **protection** permettant de sécuriser une machine contre l’**ARP spoofing** et le **DNS spoofing**.  
+
+### Fonctionnalités
+- Vérifie la présence des outils nécessaires (`ip`, `arptables`, `iptables`).  
+- Applique une **entrée ARP statique** pour la passerelle afin de bloquer les usurpations ARP.  
+- Définit une **politique ARP stricte** :  
+  - `DROP` par défaut,  
+  - autorise uniquement la passerelle définie.  
+- Verrouille le **DNS** vers un résolveur de confiance (par défaut `1.1.1.1`).  
+- Optionnel : met à jour `/etc/resolv.conf` pour forcer l’utilisation du DNS choisi.  
+
+### ✅ Avantages
+- Protège efficacement contre les attaques MITM basées sur **ARP spoofing**.  
+- Évite les détournements de résolution DNS.  
+- Compatible **Debian / Ubuntu / Parrot**.  
+
+### 🚀 Utilisation
+
+chmod +x protect_mitm.sh
+sudo ./protect_mitm.sh
+
+---
+
 ### 🧹 Nettoyage complet des machines
 
 Debian (victime)
