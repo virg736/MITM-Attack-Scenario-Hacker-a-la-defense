@@ -39,6 +39,24 @@ Ce guide est destiné à l’**apprentissage/défense** et au **pentest autoris�
 
 ---
 
+## Table des matières
+
+1. [Introduction](#introduction)
+2. [Prérequis techniques](#prérequis-techniques)
+3. [Logiciels utiles](#logiciels-utiles-côté-parrot)
+4. [Paramétrage VirtualBox](#paramétrage-virtualbox)
+5. [Configuration IP & tests LAN](#configuration-ip--tests-lan)
+6. [Découverte réseau (Nmap)](#découverte-réseau-nmap)
+7. [Transformer Parrot en routeur NAT](#transformer-parrot-en-routeur-nat)
+8. [Observation du trafic (tcpdump / Wireshark)](#observation-du-trafic-tcpdump--wireshark)
+9. [Attaque MITM](#attaque-mitm-bettercap-ou-arpspoof)
+10. [Proxy / Burp](#option-proxyburp-http)
+11. [Nettoyage complet](#nettoyage-complet-des-machines)
+12. [Bonnes pratiques Wi-Fi public](#se-protéger-sur-un-wi-fi-public)
+13. [Résumé & Conclusion](#résumé-express)
+	
+
+
 ##  Sommaire
 
 1. Contexte “hacker en lieu public
