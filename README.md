@@ -75,7 +75,6 @@ Dans un **aéroport** ou un **café**, un attaquant peut se placer entre les cli
 - 2 VM : Parrot OS (attaquant), Debian (victime)
 - RAM : 2 Go minimum par VM
 - CPU : 2 cœurs conseillés
-- Connexion Internet active
 
 ---
 
