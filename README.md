@@ -86,7 +86,7 @@ Dans un **aéroport** ou un **café**, un attaquant peut se placer entre les cli
 4. Suivre le scénario pas à pas → depuis la section [Configuration IP & tests LAN](#configuration-ip--tests-lan).  
 
 
-          🌍 Internet
+          🌍 Internet   (sortie NAT VirtualBox)
               │
           (NAT)
               │
