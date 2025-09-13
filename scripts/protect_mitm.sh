@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -euo pipefail 
+set -euo pipefail
 # protect_pro.sh - Protection MITM (ARP/DNS)
 # Copyright (c) 2025 Virginie Lechene
 # SPDX-License-Identifier: MIT
