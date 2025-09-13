@@ -371,7 +371,7 @@ Il illustre les **principes de défense réseau** contre l’ARP spoofing et le 
 ---
 
 
-## 🚀 Nouveau script : protect_pro.sh
+##  Nouveau script : protect_pro.sh
 
 Après mon premier script (**protect_mitm.sh**), voici une version améliorée : **protect_pro.sh** 🚀  
 
@@ -384,13 +384,15 @@ Après mon premier script (**protect_mitm.sh**), voici une version améliorée :
 📸 **Preuve en image** :  
 1.1.1.1 autorisé ✅ | 8.8.8.8 bloqué 🚫  
 
-🎯 **Objectif** : un labo pédagogique pour montrer comment passer d’un script simple à une version plus robuste et professionnelle contre les attaques **Man-in-the-Middle (MITM)**.  
+ **Objectif** : un labo pédagogique pour montrer comment passer d’un script simple à une version plus robuste et professionnelle contre les attaques **Man-in-the-Middle (MITM)**.  
 
 ⚠️ **Note importante**  
 Ce script est avant tout **pédagogique** :  
 - Idéal pour apprendre, tester et sensibiliser  
 - Utile en lab de formation, pentest interne ou POC  
-- Pas destiné tel quel à la production, mais les entreprises peuvent s’en inspirer pour renforcer leurs défenses  
+- Pas destiné tel quel à la production, mais les entreprises peuvent s’en inspirer pour renforcer leurs défenses
+
+---
 
 ### 🧹 Nettoyage complet des machines
 
