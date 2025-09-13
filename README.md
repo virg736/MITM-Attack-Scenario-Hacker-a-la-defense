@@ -367,12 +367,6 @@ sudo ./protect_mitm.sh
 Ce dépôt propose un **script de protection MITM (ARP/DNS) à visée démonstrative**.  
 Il illustre les **principes de défense réseau** contre l’ARP spoofing et le DNS spoofing, mais il est **volontairement strict** et donc peu adapté à une utilisation quotidienne.  
 
-Pour un environnement réel, il est recommandé d’utiliser le script **“pro”** présenté plus bas, qui ajoute :  
-- une **journalisation** des événements,  
-- un **mode détection** en plus du mode blocage,  
-- des **exceptions réseau courantes** (DHCP, NTP…),  
-- et une **restauration facilitée** de la configuration.
-
 
 ---
 
