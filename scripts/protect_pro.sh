@@ -1,4 +1,8 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash 
+# protect_pro.sh - Protection MITM (ARP/DNS)
+# Copyright (c) 2025 Virginie Lechene
+# SPDX-License-Identifier: MIT
+# Voir le fichier LICENSE pour les détails.
 # -------------------------------------------------------------------
 # protect_pro.sh — Protection locale contre MITM (ARP/DNS)
 # Usage :
