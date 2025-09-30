@@ -16,7 +16,7 @@ Usage pédagogique uniquement.
 
 ![License](https://licensebuttons.net/l/by-nd/4.0/88x31.png)
 
-*Image protégée – Propriété exclusive*
+*Image protégée - Propriété exclusive*
 
 </div>
 
