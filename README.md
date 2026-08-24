@@ -248,10 +248,18 @@ iptables -t nat -A POSTROUTING -o enp0s8 -j MASQUERADE
 Définir Parrot comme passerelle par défaut :  
 ip route add default via 192.168.100.20 dev enp0s3
 
-Configurer un DNS (temporaire, pour le TP) :  
+### Tester l'accès Internet et la résolution DNS
 
-ping -c 3 8.8.8.8   # doit répondre
-ping -c 3 google.com   # doit répondre si DNS OK
+Tester la connectivité Internet :  
+
+ping -c 3 8.8.8.8   
+
+Puis tester la résolution DNS :   
+
+ping -c 3 google.com   
+
+✅ Si 8.8.8.8 répond, la connectivité réseau fonctionne.   
+✅ Si google.com répond également, la résolution DNS fonctionne.   
 
 ---
 
