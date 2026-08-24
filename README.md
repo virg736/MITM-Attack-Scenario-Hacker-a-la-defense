@@ -64,16 +64,21 @@ Ce laboratoire permet notamment de :
 	
 ---
 
-##  Contexte : "hacker en lieu public"
+## 🌐 Contexte : attaque MITM par ARP spoofing
 
-Dans un **aéroport** ou un **café**, un attaquant peut se placer entre les clients et Internet :
+Sur un réseau local, un attaquant présent sur le même segment réseau qu’une victime peut tenter de se positionner entre celle-ci et sa passerelle.
 
-- créer un faux hotspot ou s’insérer dans un réseau existant,
-- empoisonner la table ARP (MITM) pour que la victime envoie son trafic à l’attaquant,
-- observer ou modifier le trafic non chiffré (HTTP, DNS, etc.).
+Une technique courante consiste à effectuer un **empoisonnement ARP (ARP spoofing)** afin d’associer l’adresse IP de la passerelle à l’adresse MAC de la machine attaquante.
 
-👉 Dans ce projet, nous reproduisons ces techniques **dans un labo local** afin d'apprendre à les comprendre et à s’en proteger.
+L’attaquant peut alors :
 
+- intercepter une partie du trafic réseau de la victime ;
+- observer certains flux non chiffrés ;
+- analyser les requêtes réseau avec des outils comme **tcpdump** ou **Wireshark** ;
+- étudier les traces laissées par l’empoisonnement ARP.
+
+👉 Dans ce projet, cette situation est reproduite **uniquement dans un laboratoire VirtualBox contrôlé** afin de comprendre le fonctionnement de l’attaque, son observation, sa détection et les moyens de s’en protéger.
+ 
 ---
 
 ## Prérequis techniques
