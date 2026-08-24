@@ -301,8 +301,6 @@ ip.addr == 192.168.100.10 → trafic de la victime
 
 ## 🕵️ Analyse du trafic avec Bettercap
 
-### Option A - Bettercap *(recommandé)*  
-
 Sur Parrot :  
 bettercap -iface enp0s3
 
@@ -314,7 +312,6 @@ net.show
 set net.sniff.output /root/capture.pcap   
 net.sniff on   
 
-🕵️ Attaque MITM (Bettercap ou arpspoof)
 
 📸 Exemple d’exécution :
 
