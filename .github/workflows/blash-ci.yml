@@ -2,9 +2,9 @@ name: Bash CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 permissions:
   contents: write
@@ -12,31 +12,32 @@ permissions:
 jobs:
   lint-and-validate:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
 
-      # ✅ Vérif syntaxe bash (rapide)
+      # ✅ Vérification de la syntaxe Bash
       - name: Bash syntax check
-        run: bash -n scripts/protect_mitm.sh
+        run: bash -n scripts/protect_pro.sh
 
-      # ✅ Installe ShellCheck (lint sécurité/meilleures pratiques)
-      - name: Install shellcheck
+      # ✅ Installation de ShellCheck
+      - name: Install ShellCheck
         run: |
           sudo apt-get update
           sudo apt-get install -y shellcheck
 
-      # ✅ Lint Bash avec ShellCheck
-      - name: Shellcheck lint
-        run: shellcheck --severity=style --color=always scripts/protect_mitm.sh
+      # ✅ Analyse avec ShellCheck
+      - name: ShellCheck lint
+        run: shellcheck --severity=style --color=always scripts/protect_pro.sh
 
-      # (Optionnel) Vérifier l’entête + droits exécutable
-      - name: Ensure shebang + executable bit
+      # ✅ Vérification du shebang et droits d'exécution
+      - name: Ensure shebang and executable bit
         run: |
-          grep -q '^#!/usr/bin/env bash' scripts/protect_mitm.sh
-          chmod +x scripts/protect_mitm.sh
+          grep -q '^#!/usr/bin/env bash' scripts/protect_pro.sh
+          chmod +x scripts/protect_pro.sh
 
-      # ✅ Installer shfmt
+      # ✅ Installation de shfmt
       - name: Install shfmt
         run: |
           sudo apt-get update
@@ -44,11 +45,14 @@ jobs:
           echo "$HOME/go/bin" >> "$GITHUB_PATH"
           go install mvdan.cc/sh/v3/cmd/shfmt@latest
 
-      # ✅ Auto-format + commit si changement
-      - name: Run shfmt (auto-fix)
-        run: shfmt -w -i 2 -ci -s scripts/protect_mitm.sh
+      # ✅ Formatage automatique
+      - name: Run shfmt
+        run: shfmt -w -i 2 -ci -s scripts/protect_pro.sh
 
+      # ✅ Commit automatique si shfmt modifie le script
       - name: Commit formatted files
+        if: github.event_name == 'push'
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "chore(ci): apply shfmt formatting"
+          file_pattern: scripts/protect_pro.sh
