@@ -462,19 +462,21 @@ Arrêtez les outils d’analyse encore actifs, désactivez les réglages tempora
 
 ---
 
-### 🔒 Conclusion - Attaques MITM et scénario Wi-Fi public
+## 🔒 Conclusion
 
-Le scénario présenté illustre une attaque **MITM en environnement de type Wi-Fi public**, où l’attaquant peut se positionner entre la victime et la passerelle pour intercepter, modifier ou bloquer le trafic.
+Ce projet présente, dans un **laboratoire VirtualBox contrôlé**, les principes d’une attaque **Man-in-the-Middle (MITM)** et l’observation du trafic réseau.
 
-Mais il existe **plusieurs variantes d’attaques MITM** :
-- **ARP spoofing / ARP poisoning** → redirection du trafic sur un réseau local (comme dans ce TP).
-- **DNS spoofing** → réponse DNS falsifiée pour rediriger la victime vers un site frauduleux.
-- **HTTPS downgrade** → forcer la victime à utiliser un protocole HTTP non sécurisé.
-- **Evil Twin (faux Wi-Fi public)** → l’attaquant crée un hotspot Wi-Fi piégé pour capter le trafic des utilisateurs.
-- **Proxy transparent / interception SSL** → manipulation via un proxy ou un faux certificat.
+Il permet notamment de comprendre :
+- le rôle de l’**ARP** dans un réseau local ;
+- l’analyse du trafic avec **tcpdump, Wireshark et Bettercap** ;
+- les risques liés aux réseaux Wi-Fi publics ;
+- plusieurs mécanismes de **détection et de protection**.
 
-👉 Dans notre cas, le scénario est centré sur **l’usage d’un Wi-Fi public vulnérable**, un cas d'usage très courant pour ce type d’attaque.
- 
+> ⚠️ Les manipulations présentées sont réalisées uniquement à des fins pédagogiques, défensives et dans un environnement autorisé.
+
+L’objectif principal est de mieux comprendre ces attaques afin de savoir **les identifier, les analyser et s’en protéger**.
+
+
 ---
 
 ✍️ Auteur : *Virginie Lechene*
