@@ -390,27 +390,29 @@ Il illustre certains **principes de défense réseau** contre l’ARP spoofing e
 
 ---
 
+## Nouveau script : `protect_pro.sh`
 
-##  Nouveau script : protect_pro.sh
+Après mon premier script (`protect_mitm.sh`), voici une version améliorée : **`protect_pro.sh`**.
 
-Après mon premier script (**protect_mitm.sh**), voici une version améliorée : **protect_pro.sh** 🚀  
+✅ Modes `block` et `detect`  
+✅ Sauvegarde de la configuration (`iptables`, `arptables`, `sysctl`, table ARP)  
+✅ Entrée ARP statique pour la passerelle  
+✅ Verrouillage du DNS classique vers un résolveur défini (ex. `1.1.1.1`)  
+✅ Journalisation des actions via syslog  
 
-✅ Modes block ou detect  
-✅ Sauvegarde/restauration (iptables, arptables, sysctl)  
-✅ Entrée ARP statique (anti ARP spoofing)  
-✅ Verrouillage DNS (ex. 1.1.1.1)  
-✅ Logs détaillés  
+📸 **Preuve en image :**  
+`1.1.1.1` autorisé ✅ | `8.8.8.8` bloqué 🚫
 
-📸 **Preuve en image** :  
-1.1.1.1 autorisé ✅ | 8.8.8.8 bloqué 🚫  
+**Objectif :** montrer, dans un laboratoire pédagogique, l’évolution d’un script simple vers une version plus robuste et configurable pour illustrer plusieurs mécanismes de protection ARP/DNS.
 
- **Objectif** : un labo pédagogique pour montrer comment passer d’un script simple à une version plus robuste et professionnelle contre les attaques **Man-in-the-Middle (MITM)**.  
+### ⚠️ Note importante
 
-⚠️ **Note importante**  
-Ce script est avant tout **pédagogique** :  
-- Idéal pour apprendre, tester et sensibiliser  
-- Utile en lab de formation, pentest interne ou POC  
-- Pas destiné tel quel à la production, mais les entreprises peuvent s’en inspirer pour renforcer leurs défenses
+Ce script est avant tout **pédagogique** :
+
+- idéal pour apprendre, tester et sensibiliser ;
+- utile en laboratoire de formation, pentest interne autorisé ou POC ;
+- non destiné tel quel à un environnement de production.
+
 
 ---
 
