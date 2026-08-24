@@ -109,11 +109,11 @@ L’attaquant peut alors :
        🖥️ Debian (Victime)
 
 
-📌 Légende :
+📌 **Légende :**
 
-Dans ce TP, "Internet" correspond uniquement à la sortie NAT de VirtualBox.
-Il ne s’agit pas d’un accès direct au vrai Internet, tout reste confiné dans un labo local et sécurisé.
+Dans ce TP, la machine Parrot dispose d’une interface **NAT VirtualBox** pour l’accès sortant à Internet, ainsi que d’une interface connectée au **réseau interne LAB**.
 
+Le réseau utilisé pour les manipulations entre Parrot et Debian reste isolé dans VirtualBox et ne doit être utilisé que dans cet environnement de laboratoire contrôlé.
 
 --- 
 
