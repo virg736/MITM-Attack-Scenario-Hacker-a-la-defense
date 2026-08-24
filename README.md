@@ -1,7 +1,6 @@
 
 [![Bash CI](https://github.com/virg736/MITM-Attack-Scenario-Hacker-a-la-defense/actions/workflows/blash-ci.yml/badge.svg)](https://github.com/virg736/MITM-Attack-Scenario-Hacker-a-la-defense/actions/workflows/blash-ci.yml)
 
-[![Bash CI](https://github.com/virg736/NOM-EXACT-DU-DEPOT/actions/workflows/blash-ci.yml/badge.svg)](https://github.com/virg736/NOM-EXACT-DU-DEPOT/actions/workflows/blash-ci.yml)
 <p align="center">
 <img src="MITM%20attack.PNG" alt="MITM Attack" width="100%"/>
 </p>
