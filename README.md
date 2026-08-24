@@ -299,7 +299,7 @@ ip.addr == 192.168.100.10 → trafic de la victime
 
 ---
 
-## 🕵️ Attaque MITM (Bettercap ou arpspoof)  
+## 🕵️ Analyse du trafic avec Bettercap
 
 ### Option A - Bettercap *(recommandé)*  
 
