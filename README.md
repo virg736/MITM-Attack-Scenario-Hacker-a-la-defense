@@ -318,6 +318,13 @@ net.sniff on
 
 ---
 
+> [!NOTE]
+> Les captures d’écran proviennent de la première version du laboratoire et montrent également des tests d’ARP spoofing.  
+> Dans l’architecture finale à deux VM présentée ici, Parrot est déjà configuré comme passerelle de Debian : l’ARP spoofing n’est donc pas nécessaire pour observer le trafic transitant par Parrot.
+
+---
+
+
 ### 🧪 Option : Proxy/Burp (HTTP)
 
 > **Note :** Intercepter du trafic HTTPS exige la gestion de certificats (CA Burp).
