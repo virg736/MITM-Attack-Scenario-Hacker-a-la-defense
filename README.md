@@ -267,11 +267,10 @@ ping -c 3 google.com
 
  tcpdump (rapide)
 
-bash
-tcpdump -i enp0s3 ou pour DNS uniquement
-tcpdump -i enp0s3 port 53
+tcpdump -i enp0s3      
+tcpdump -i enp0s3 port 53    
 
-### Wireshark 
+### Wireshark   
 
 Lancer Wireshark sur Parrot → interface enp0s3 (réseau LAB).
 
