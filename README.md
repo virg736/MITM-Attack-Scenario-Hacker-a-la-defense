@@ -25,13 +25,24 @@
 
 </div>
 
+---
 
+## 🎯 Objectif
 
-##  Objectif
-Montrer, dans un environnement **100% local**, comment un attaquant placé dans un lieu public (gare, aéroport, café…) pourrait intercepter le trafic d’une victime via **ARP spoofing**.
+Reproduire, dans un **laboratoire VirtualBox contrôlé**, le principe d’une attaque **Man-in-the-Middle (MITM) par ARP spoofing** afin de comprendre comment un attaquant peut se positionner entre une victime et sa passerelle réseau.
 
-⚠️ **Légal / éthique** : ne jamais appliquer hors d’un labo dont vous contrôlez l'environnement.
-Ce guide est destiné à l’**apprentissage/défense** et au **pentest autorisé uniquement**.
+Ce laboratoire permet notamment de :
+
+- observer les communications entre les machines du réseau ;
+- comprendre le fonctionnement de l’**ARP spoofing** ;
+- analyser le trafic avec **tcpdump** et **Wireshark** ;
+- observer les effets d’une attaque MITM ;
+- étudier les méthodes de **détection et de protection** contre ce type d’attaque.
+
+> [!WARNING]
+> **Usage légal et éthique uniquement.**  
+> Ce projet est réalisé exclusivement dans un environnement de laboratoire contrôlé. Les techniques présentées sont destinées à l’apprentissage de la cybersécurité, à la défense et aux tests d’intrusion explicitement autorisés.
+
 
 ---
 
