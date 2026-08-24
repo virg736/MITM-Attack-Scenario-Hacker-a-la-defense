@@ -394,16 +394,16 @@ Il illustre certains **principes de défense réseau** contre l’ARP spoofing e
 
 Après mon premier script (`protect_mitm.sh`), voici une version améliorée : **`protect_pro.sh`**.
 
-✅ Modes `block` et `detect` (`detect` conserve le durcissement ARP mais n'applique pas le blocage iptables)
-✅ Sauvegarde de la configuration (`iptables`, `arptables`, `sysctl`, table ARP)  
-✅ Entrée ARP statique pour la passerelle  
-✅ Verrouillage du DNS classique vers un résolveur défini (ex. `1.1.1.1`)  
-✅ Journalisation des actions via syslog  
+✅ Modes `block` et `detect` (`detect` conserve le durcissement ARP mais n'applique pas le blocage iptables)   
+✅ Sauvegarde de la configuration (`iptables`, `arptables`, `sysctl`, table ARP)     
+✅ Entrée ARP statique pour la passerelle     
+✅ Verrouillage du DNS classique vers un résolveur défini (ex. `1.1.1.1`)     
+✅ Journalisation des actions via syslog     
 
 📸 **Preuve en image :**  
-`1.1.1.1` autorisé ✅ | `8.8.8.8` bloqué 🚫
+`1.1.1.1` autorisé ✅ | `8.8.8.8` bloqué 🚫   
 
-**Objectif :** montrer, dans un laboratoire pédagogique, l’évolution d’un script simple vers une version plus robuste et configurable pour illustrer plusieurs mécanismes de protection ARP/DNS.
+**Objectif :** montrer, dans un laboratoire pédagogique, l’évolution d’un script simple vers une version plus robuste et configurable pour illustrer plusieurs mécanismes de protection ARP/DNS.   
 
 ### ⚠️ Note importante
 
