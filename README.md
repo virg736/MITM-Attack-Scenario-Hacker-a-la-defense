@@ -420,26 +420,27 @@ Ce script est avant tout **pédagogique** :
 
 ### Debian (victime)
 
-Supprimer la route par défaut configurée via Parrot :
+Supprimer la route par défaut configurée via Parrot :   
 
-ip route del default
+ip route del default   
 
-- (Facultatif) Enlever l’IP labo si configurée manuellement :
-ip addr del 192.168.100.10/24 dev enp0s3  
+- (Facultatif) Enlever l’IP labo si configurée manuellement :   
+ip addr del 192.168.100.10/24    
+dev enp0s3     
 
-- Purger le cache ARP :
-ip neigh flush all  
+- Purger le cache ARP :   
+ip neigh flush all     
 
--  Redémarrer proprement l’interface :
-ip link set enp0s3 down    
-ip link set enp0s3 up     
+-  Redémarrer proprement l’interface :   
+ip link set enp0s3 down      
+ip link set enp0s3 up       
 
-- (Option) Rétablir /etc/resolv.conf :
-printf 'nameserver 1.1.1.1\n' > /etc/resolv.conf  
+- (Option) Rétablir /etc/resolv.conf :  
+printf 'nameserver 1.1.1.1\n' > /etc/resolv.conf     
 
-- Vérifications :  
-ip -br a  
-ip route   
+- Vérifications :    
+ip -br a     
+ip route      
 
 ![Nettoyage Debian](senarionettoyagedebian.PNG)
 
