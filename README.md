@@ -314,9 +314,7 @@ net.show
 set net.sniff.output /root/capture.pcap   
 net.sniff on   
 
-ℹ️ Ici `192.168.100.1` représente la “passerelle” vue par la victime.   
-
-👉 Dans notre montage, où Parrot **est déjà la passerelle**, il est plus simple et plus sûr d’utiliser **Bettercap**.  
+🕵️ Attaque MITM (Bettercap ou arpspoof)
 
 📸 Exemple d’exécution :
 
