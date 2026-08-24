@@ -432,16 +432,17 @@ Arrêtez les outils d’analyse encore actifs, désactivez les réglages tempora
 
 ---
 
-## Se protéger sur un Wi-Fi public
+## 🌐 Se protéger sur un Wi-Fi public
 
 ### 🔒 Bonnes pratiques utilisateur
-- ☑️ **Utiliser un VPN** → chiffre tout le trafic même si le Wi-Fi est compromis.
-- ☑️ **Éviter les réseaux ouverts** (sans mot de passe WPA2/WPA3).
+
+- ☑️ **Utiliser un VPN** → chiffre le trafic entre l’appareil et le serveur VPN, ce qui limite les risques d’interception sur un Wi-Fi public.
+- ☑️ **Éviter les réseaux Wi-Fi ouverts ou dépourvus de chiffrement WPA2/WPA3.**
 - ☑️ **Désactiver la connexion automatique** aux anciens hotspots enregistrés.
-- ☑️ **Ne jamais installer de certificats inconnus** (ex. si une page vous demande d’accepter un certificat → à fuir !).
-- ☑️ **Privilégier 4G/5G** pour les opérations sensibles (banque, achats).
-- ☑️ **Vérifier les certificats dans le navigateur** (alerte = stop immédiat).
-- ☑️ **Désactiver le partage de fichiers** (Windows / macOS → couper “Partage réseau”).
+- ☑️ **Ne jamais installer de certificats inconnus** (ex. si une page vous demande d’accepter un certificat suspect → ne pas continuer).
+- ☑️ **Privilégier la 4G/5G pour les opérations sensibles** (banque, achats, données confidentielles).
+- ☑️ **Vérifier les alertes de certificat dans le navigateur** et interrompre la connexion en cas d’avertissement inattendu.
+- ☑️ **Désactiver le partage de fichiers** sur les réseaux publics (Windows / macOS → désactiver le partage réseau).
 
 ---
 
