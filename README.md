@@ -446,21 +446,20 @@ Arrêtez les outils d’analyse encore actifs, désactivez les réglages tempora
 
 ---
 
-###  Côté administrateur (Wi-Fi public)
-- Configurer le Wi-Fi avec **WPA2-Enterprise / WPA3** (éviter l’ouvert sans mot de passe).
-- Mettre en place une **segmentation VLAN** (isolation client-à-client).
-- Activer **Dynamic ARP Inspection (DAI)** et **Port Security** sur l’infra réseau.
-- Surveiller le réseau avec un **IDS/IPS** (détection ARP spoof, DNS falsifiés).
+## Côté administrateur (Wi-Fi public)
 
----
+- Configurer le Wi-Fi avec **WPA2-Enterprise / WPA3** et éviter les réseaux ouverts sans chiffrement.
+- Mettre en place une **segmentation VLAN** et activer l’**isolation client-à-client**.
+- Activer **Dynamic ARP Inspection (DAI)** et **Port Security** si l’équipement réseau le permet.
+- Surveiller le réseau avec un **IDS/IPS** afin de détecter notamment les anomalies ARP et certains comportements DNS suspects.
 
-###  Résumé express
-- 🔗 VPN obligatoire
--  Éviter les réseaux ouverts
-- 🔐 WPA2/WPA3 + isolation clients
--  Pas de certificats douteux
--  Si doute → passer en 4G/5G
-	
+## Résumé express
+
+- 🔗 **VPN recommandé** sur les réseaux publics
+- 🚫 Éviter les réseaux Wi-Fi ouverts
+- 🔐 **WPA2/WPA3** + isolation des clients
+- 📶 Privilégier la **4G/5G** pour les opérations sensibles
+
 ---
 
 ### 🔒 Conclusion - Attaques MITM et scénario Wi-Fi public
