@@ -355,55 +355,20 @@ Sinon, gardez-le uniquement pour les tests HTTP.
 
 ---
 
-## Script de protection : `protect_mitm.sh`
+## 🛡️ Script de protection : `protect_pro.sh`
 
-En complément de l’analyse du trafic réseau, ce projet inclut un **script de protection** permettant d’illustrer plusieurs mécanismes de défense contre l’**ARP spoofing** et certains risques liés au **DNS**.
+Le projet inclut **`protect_pro.sh`**, un script pédagogique permettant d’illustrer plusieurs mécanismes de protection ARP/DNS dans un environnement de laboratoire contrôlé.
 
-### Fonctionnalités
-
-- Vérifie la présence des outils nécessaires (`ip`, `arptables`, `iptables`).
-- Applique une **entrée ARP statique** pour la passerelle afin de limiter les risques d’usurpation ARP.
-- Définit une **politique ARP stricte** :
-  - `DROP` par défaut ;
-  - autorise uniquement la passerelle définie.
-- Utilise un **résolveur DNS de confiance** (par défaut `1.1.1.1`).
-- Optionnel : met à jour `/etc/resolv.conf` afin d’utiliser le résolveur DNS choisi.
-
-### ✅ Avantages
-
-- Illustre une méthode de protection contre les attaques basées sur l’**ARP spoofing**.
-- Réduit les risques liés à l’utilisation d’un résolveur DNS non prévu.
-- Compatible avec **Debian / Ubuntu / Parrot OS**.
-
-### Utilisation
-
-chmod +x protect_mitm.sh   
-sudo ./protect_mitm.sh   
-
-
-### 📌 Note d’usage   
-
-Ce dépôt propose un **script de protection MITM (ARP/DNS) à visée démonstrative**.
-
-Il illustre certains **principes de défense réseau** contre l’ARP spoofing et les risques liés à la configuration DNS, mais il est volontairement strict et reste principalement destiné à un **environnement de laboratoire contrôlé**.
-  
-
----
-
-## Nouveau script : `protect_pro.sh`
-
-Après mon premier script (`protect_mitm.sh`), voici une version améliorée : **`protect_pro.sh`**.
-
-✅ Modes `block` et `detect` (`detect` conserve le durcissement ARP mais n'applique pas le blocage iptables)   
-✅ Sauvegarde de la configuration (`iptables`, `arptables`, `sysctl`, table ARP)     
-✅ Entrée ARP statique pour la passerelle     
-✅ Verrouillage du DNS classique vers un résolveur défini (ex. `1.1.1.1`)     
-✅ Journalisation des actions via syslog     
+✅ Modes `block` et `detect` (`detect` conserve le durcissement ARP mais n'applique pas le blocage iptables)  
+✅ Sauvegarde de la configuration (`iptables`, `arptables`, `sysctl`, table ARP)  
+✅ Entrée ARP statique pour la passerelle  
+✅ Verrouillage du DNS classique vers un résolveur défini (ex. `1.1.1.1`)  
+✅ Journalisation des actions via syslog  
 
 📸 **Preuve en image :**  
-`1.1.1.1` autorisé ✅ | `8.8.8.8` bloqué 🚫   
+`1.1.1.1` autorisé ✅ | `8.8.8.8` bloqué 🚫
 
-**Objectif :** montrer, dans un laboratoire pédagogique, l’évolution d’un script simple vers une version plus robuste et configurable pour illustrer plusieurs mécanismes de protection ARP/DNS.   
+**Objectif :** illustrer, dans un laboratoire pédagogique, plusieurs mécanismes de protection contre les risques liés à l’ARP spoofing et à la configuration DNS.
 
 ### ⚠️ Note importante
 
@@ -412,7 +377,6 @@ Ce script est avant tout **pédagogique** :
 - idéal pour apprendre, tester et sensibiliser ;
 - utile en laboratoire de formation, pentest interne autorisé ou POC ;
 - non destiné tel quel à un environnement de production.
-
 
 ---
 
@@ -489,7 +453,7 @@ Le script est publié sous la licence MIT.
 ## À propos de l’usage
 Ce projet est destiné exclusivement à des fins pédagogiques, notamment dans le cadre de :
 - d’une formation en cybersécurité,
-- de tests d’intrusion légaux (pentest),
+- tests d’intrusion explicitement autorisés,
 - d’analyses réseau dans un environnement contrôlé.
 
 ⚠️ L’auteure ne cautionne ni n’autorise l’utilisation de ce script en dehors d’un cadre légal strictement défini.
